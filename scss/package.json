@@ -1,0 +1,23 @@
+{
+  "name": "design-systerm-enterprice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node src/scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrahimsifat/design-systerm-enterprise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibrahimsifat/design-systerm-enterprise/issues"
+  },
+  "homepage": "https://github.com/ibrahimsifat/design-systerm-enterprise#readme",
+  "dependencies": {
+    "sass": "^1.59.3"
+  }
+}
