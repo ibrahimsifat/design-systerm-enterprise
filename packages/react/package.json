@@ -11,7 +11,9 @@
     "tslib": "^2.5.0",
     "typescript": "^5.0.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@ds.e/scss": "1.0.0"
+  },
   "scripts": {
     "build": "rollup -c"
   }
