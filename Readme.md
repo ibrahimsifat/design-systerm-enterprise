@@ -1,6 +1,6 @@
 # Design System steps 📝
 
-This is a design system for implementing mordarn applications like single page applications and static pages
+This is a [design](https://www.figma.com/file/mJZ1H9VvUbxFB84vkSHsAu/Design-System---Demo?node-id=8872-1911&t=EO9EcfhDXwcR2ANZ-0) system for implementing mordarn applications like single page applications and static pages
 
 ## Get Started 🚀
 
@@ -33,17 +33,23 @@ This is a design system for implementing mordarn applications like single page a
    - Run `yarn add lerna` to create lerna configration json file
    - Add in `lerna.json` `"packages": ["packages/*"]` to intrigate the packages to lerna and also add `"npmClient": "yarn"' for use yarn as npm client and ` "stream": true` to generate log
    - Change `package.json` workspace to `"workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  }` to add onather packages and `"private":true` for private the package
+  "packages": [
+    "packages/*"
+  ]
+}` to add onather packages and `"private":true` for private the package
    - delete all node modules folder and then run `yarn` at root and you can check `yarn build` to sure all build are working.
    - Add ` "build": "yarn lerna run build"` to use lerna build system
 4. ##### Create a folder named `react` inside `packages` folder for react js Project
-   - run `yarn init -y` to initialize and set namespace ` "name": "@ds.e/react"` 
+   - run `yarn init -y` to initialize and set namespace ` "name": "@ds.e/react"`
    - Install `yarn add -D react typescript @types/react` for react Project
    - create `tsconfig.json` inside `react` folder for configration
    - inside of `src` folder create a `index.ts` and folders `atoms, foundation, molecules`
    - Create a atom like Button and exports into
    - Install `yarn add In ract -D rollup rollup-pulgin-typescript2` to complieation
    - Create a file root of react `rollup.config.js`
+5. ##### Create a playgrounds in root
+   - Inside of playgrounds `yarn create vite` react Project
+   - And import one atom inside of `app.tsx` and go live first react atom working after....
+6. ##### Create Atoms and Foundation Package
+   - Install `yarn add -D nodemon` inside of `package/scss` for resterting server changes & inside of package json add script ` "dev":"nodemon --watch src --exec yarn build -e scss"`
+   -

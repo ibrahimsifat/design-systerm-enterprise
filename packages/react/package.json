@@ -15,6 +15,7 @@
     "@ds.e/scss": "1.0.0"
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "dev": "yarn build --watch"
   }
 }
