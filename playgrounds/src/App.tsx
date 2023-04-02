@@ -1,8 +1,8 @@
-import { Button, Color } from "@ds.e/react/lib";
+import { Button, Color, spacing } from "@ds.e/react/lib";
 const App = () => {
   return (
     <div>
-      <Color hexCode="#ffffff" height="200px" width="100px" />
+      <Color hexCode="#ffffff" height={spacing.xxl} width={spacing.xxl} />
       <Button title="This is title" onClick={() => alert("this is alert")}>
         Click Me
       </Button>
