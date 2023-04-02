@@ -3,8 +3,8 @@ import * as React from "react";
 import spacing from "../../foundation/spacing";
 export interface IColorProps {
   hexCode: string;
-  width?: string;
-  height?: string;
+  width?: keyof typeof spacing;
+  height?: keyof typeof spacing;
 }
 
 const Color: React.FC<IColorProps> = ({
