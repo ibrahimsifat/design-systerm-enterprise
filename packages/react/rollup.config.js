@@ -4,6 +4,7 @@ module.exports = {
     "src/index.ts",
     "src/atoms/Button/index.ts",
     "src/atoms/Color/index.ts",
+    "src/atoms/Text/index.ts",
   ],
   output: {
     dir: "lib",
