@@ -53,3 +53,7 @@ This is a [design](https://www.figma.com/file/mJZ1H9VvUbxFB84vkSHsAu/Design-Syst
 6. ##### Create Atoms and Foundation Package
    - Install `yarn add -D nodemon` inside of `package/scss` for resterting server changes & inside of package json add script ` "dev":"nodemon --watch src --exec yarn build -e scss"`
    -
+7. ##### Create a new package inside of `packages` folder named `foundation`
+
+- run `yarn init -y` to initialize and set namespace ` "name": "@ds.e/react"`
+-

@@ -2,7 +2,7 @@ import { Button, Color } from "@ds.e/react/lib";
 const App = () => {
   return (
     <div>
-      <Color hexCode="#ffffff" height="md" width="md" />
+      <Color hexCode="#ffffff" height="xxl" width="md" />
       <Button title="This is title" onClick={() => alert("this is alert")}>
         Click Me
       </Button>
