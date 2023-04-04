@@ -129,182 +129,57 @@ x Breakpoints.................... Global respofisive breakpoints definitions.
 *
 */
 /*=====  End of Mixin  ======*/
-.dse-margin-none {
+.dse-select {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.dse-select__label {
+  align-items: center;
+  background-color: var(--dse-form-bg-color, #fff);
+  border: 1px solid var(--dse-form-border-color, #f1f2f3);
+  font-family: var(--dse-body-font-family, "Playfair Display", serif);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.dse-select__caret {
+  transition: all 250ms ease;
+}
+.dse-select__caret--open {
+  transform: rotate(180deg);
+}
+.dse-select__caret--close {
+  transform: rotate(0deg);
+}
+.dse-select__overlay {
+  padding: 0;
   margin: 0;
+  box-shadow: 0 4px 11px rgba(157, 157, 157, 0.21);
+  list-style-type: none;
+  background-color: var(--dse-form-bg-color, #fff);
+  border: 1px solid var(--dse-form-border-color, #f1f2f3);
+  width: 100%;
+  z-index: 99;
+  position: absolute;
 }
-
-.dse-margin-left-none {
-  margin-left: 0;
+.dse-select__option {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
 }
-
-.dse-margin-right-none {
-  margin-right: 0;
+.dse-select__option:hover {
+  background-color: var(--dse-form-bg-color-hover, #f1f2f3);
 }
-
-.dse-margin-top-none {
-  margin-top: 0;
+.dse-select__option--selected {
+  background-color: var(--dse-form-bg-option-selected, #5ece7b);
+  color: var(--dse-form-color-option-selected, #fff);
 }
-
-.dse-margin-bottom-none {
-  margin-bottom: 0;
-}
-
-.dse-margin-Xxxs {
-  margin: 0.25rem;
-}
-
-.dse-margin-left-Xxxs {
-  margin-left: 0.25rem;
-}
-
-.dse-margin-right-Xxxs {
-  margin-right: 0.25rem;
-}
-
-.dse-margin-top-Xxxs {
-  margin-top: 0.25rem;
-}
-
-.dse-margin-bottom-Xxxs {
-  margin-bottom: 0.25rem;
-}
-
-.dse-margin-www xxs {
-  margin: 0.5rem;
-}
-
-.dse-margin-left-www xxs {
-  margin-left: 0.5rem;
-}
-
-.dse-margin-right-www xxs {
-  margin-right: 0.5rem;
-}
-
-.dse-margin-top-www xxs {
-  margin-top: 0.5rem;
-}
-
-.dse-margin-bottom-www xxs {
-  margin-bottom: 0.5rem;
-}
-
-.dse-margin-xs {
-  margin: 0.75rem;
-}
-
-.dse-margin-left-xs {
-  margin-left: 0.75rem;
-}
-
-.dse-margin-right-xs {
-  margin-right: 0.75rem;
-}
-
-.dse-margin-top-xs {
-  margin-top: 0.75rem;
-}
-
-.dse-margin-bottom-xs {
-  margin-bottom: 0.75rem;
-}
-
-.dse-margin-sm {
-  margin: 1rem;
-}
-
-.dse-margin-left-sm {
-  margin-left: 1rem;
-}
-
-.dse-margin-right-sm {
-  margin-right: 1rem;
-}
-
-.dse-margin-top-sm {
-  margin-top: 1rem;
-}
-
-.dse-margin-bottom-sm {
-  margin-bottom: 1rem;
-}
-
-.dse-margin-md {
-  margin: 1.5rem;
-}
-
-.dse-margin-left-md {
-  margin-left: 1.5rem;
-}
-
-.dse-margin-right-md {
-  margin-right: 1.5rem;
-}
-
-.dse-margin-top-md {
-  margin-top: 1.5rem;
-}
-
-.dse-margin-bottom-md {
-  margin-bottom: 1.5rem;
-}
-
-.dse-margin-lg {
-  margin: 2rem;
-}
-
-.dse-margin-left-lg {
-  margin-left: 2rem;
-}
-
-.dse-margin-right-lg {
-  margin-right: 2rem;
-}
-
-.dse-margin-top-lg {
-  margin-top: 2rem;
-}
-
-.dse-margin-bottom-lg {
-  margin-bottom: 2rem;
-}
-
-.dse-margin-xl {
-  margin: 3rem;
-}
-
-.dse-margin-left-xl {
-  margin-left: 3rem;
-}
-
-.dse-margin-right-xl {
-  margin-right: 3rem;
-}
-
-.dse-margin-top-xl {
-  margin-top: 3rem;
-}
-
-.dse-margin-bottom-xl {
-  margin-bottom: 3rem;
-}
-
-.dse-margin-xxl {
-  margin: 4.5rem;
-}
-
-.dse-margin-left-xxl {
-  margin-left: 4.5rem;
-}
-
-.dse-margin-right-xxl {
-  margin-right: 4.5rem;
-}
-
-.dse-margin-top-xxl {
-  margin-top: 4.5rem;
-}
-
-.dse-margin-bottom-xxl {
-  margin-bottom: 4.5rem;
+.dse-select__option--selected:hover {
+  background-color: var(--dse-form-bg-option-selected, #5ece7b);
 }

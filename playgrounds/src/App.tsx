@@ -1,4 +1,11 @@
-import { Button, Color, Margin, Text } from "@ds.e/react/lib";
+import { Button, Color, Margin, Select, Text } from "@ds.e/react/lib";
+const colorOptions = [
+  { label: "Red", value: "red" },
+  { label: "Green", value: "green" },
+  { label: "Blue", value: "blue" },
+  { label: "Black", value: "black" },
+  { label: "Yellow", value: "yellow" },
+];
 const App = () => {
   return (
     <div>
@@ -9,7 +16,16 @@ const App = () => {
       <Button title="This is title" onClick={() => alert("this is alert")}>
         Click Me
       </Button>
-      <h1>hello </h1>
+      <Margin>
+        <Text size="xl">This is select</Text>
+        <Margin>
+          <Select
+            label="Select A Color"
+            options={colorOptions}
+            onOptionSelected={console.log}
+          ></Select>
+        </Margin>
+      </Margin>
     </div>
   );
 };

@@ -90,10 +90,6 @@ x Breakpoints.................... Global respofisive breakpoints definitions.
 =============================================*/
 /*=====  End of Buttons  ======*/
 /*=============================================
-=            Text            =
-=============================================*/
-/*=====  End of Text  ======*/
-/*=============================================
 =            Forms            =
 =============================================*/
 /*=====  End of Forms  ======*/
@@ -136,7 +132,7 @@ x Breakpoints.................... Global respofisive breakpoints definitions.
 .dse-text {
   margin: 0;
   font-family: var(--dse-body-font-family, "Playfair Display", serif);
-  color: #f1f2f3;
+  color: var(--dse-body-text-color, #1d1f22);
 }
 
 .dse-text-xs {
