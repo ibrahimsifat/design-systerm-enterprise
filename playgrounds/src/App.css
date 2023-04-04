@@ -1,1 +1,6 @@
-
+.custom-selected-option {
+  padding: 1rem;
+}
+.custom-selected-option--selected {
+  background-color: aquamarine;
+}

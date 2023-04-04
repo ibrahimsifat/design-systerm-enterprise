@@ -1,4 +1,5 @@
 import { Button, Color, Margin, Select, Text } from "@ds.e/react/lib";
+import "./App.css";
 const colorOptions = [
   { label: "Red", value: "red" },
   { label: "Green", value: "green" },
@@ -23,6 +24,29 @@ const App = () => {
             label="Select A Color"
             options={colorOptions}
             onOptionSelected={console.log}
+            // renderOption={({
+            //   option,
+            //   getOptionRecommendedProps,
+            //   isSelected,
+            // }) => (
+            //   <li
+            //     {...getOptionRecommendedProps({
+            //       className: `custom-selected-option ${
+            //         isSelected ? "custom-selected-option--selected" : ""
+            //       }`,
+            //     })}
+            //   >
+            //     <div style={{ display: "flex" }}>
+            //       <input
+            //         type="checkbox"
+            //         name="check"
+            //         id="check"
+            //         checked={isSelected}
+            //       />
+            //       <Text> {option.label}</Text>
+            //     </div>
+            //   </li>
+            // )}
           ></Select>
         </Margin>
       </Margin>
