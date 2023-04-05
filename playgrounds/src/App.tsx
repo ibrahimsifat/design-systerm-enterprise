@@ -1,4 +1,4 @@
-import { Button, Color, Margin, Select, Text } from "@ds.e/react/lib";
+import { Margin, Select } from "@ds.e/react/lib";
 import "./App.css";
 const colorOptions = [
   { label: "Red", value: "red" },
@@ -10,15 +10,15 @@ const colorOptions = [
 const App = () => {
   return (
     <div>
-      <Margin bottom top>
+      {/* <Margin bottom top>
         <Text size="xl">Hello World</Text>
       </Margin>
       <Color hexCode="#ffffff" height="xxl" width="md" />
       <Button title="This is title" onClick={() => alert("this is alert")}>
         Click Me
-      </Button>
+      </Button> */}
       <Margin>
-        <Text size="xl">This is select</Text>
+        {/* <Text size="xl">This is select</Text> */}
         <Margin>
           <Select
             label="Select A Color"
